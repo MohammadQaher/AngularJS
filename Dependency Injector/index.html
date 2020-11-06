@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="DIApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>Name Calculator</title>
+  </head>
+  <body>
+    <h1>Dependency Injection in JS an AngularJS</h1>
+    <div ng-controller="DIController">
+        Your name:
+        <input type="text"
+          ng-model="name"
+          ng-blur="upper();"
+          >
+
+    </div>
+  </body>
+</html>
